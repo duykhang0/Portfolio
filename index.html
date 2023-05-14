@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <div class="overplay"></div>
+        <!-- Header -->
+        <div id="header">
+            <div id="header-logo">
+                <p>Dy<span>Khang.</span></p>
+            </div>
+
+            <div id="header-nav">
+                <ul id="nav-ul">
+                    <li class="nav-item active" data-target="tab1">Introduce</li>
+                    <li class="nav-item " data-target="tab2">Skill</li>
+                    <li class="nav-item " data-target="tab3">Project</li>      
+                    <li class="nav-item " data-target="tab4">Contact</li>
+                    <i class="fa-regular fa-circle-xmark" id="close"></i>     
+                </ul>
+            </div>
+            <div id="mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-- Content -->
+        <div id="content">
+            <div class="tab active" id="tab1">
+                <div class="more-info">
+                        <i class="fa-regular fa-circle-xmark" id="times"></i>
+                        <img src="./img/hero.jpg" alt="">
+                        <ul>
+                            <li>Nguyen Duy Khang</li>
+                            <li>07-01-2000</li>
+                            <li>Graduated</li>
+                            <li>Specialization: Information Technology</li>
+                            <li>GPA : 2.92</li>
+                            
+                        </ul>
+                        
+                </div>
+                <div class="hero-content">
+                    <p class="content-header">
+                        Hi.I'm <Span>Khang</Span> <br>Frontend <span>Developer</span>
+                    </p>
+                    <p class="content-body">
+                        Create beutiful website that convert visitor into customers
+                    </p>
+                    <button id="resume">More info</button>
+                    
+                    
+                </div>
+                
+                <div class="hero-intro">
+                    <img src="./img/hero.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="tab " id="tab2">
+                <div class="hero-skill">
+                    <img src="./img/hero.jpg" alt="">
+                </div>
+
+                <div class="skill">
+                     <div class="skill-box">
+                        <span class="title">HTML</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per">
+                                <span class="tooltip">90%</span>
+                            </span>
+                        </div>
+                     </div>
+
+                     <div class="skill-box">
+                        <span class="title">CSS</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">90%</span>
+                            </span>
+                        </div>
+                     </div>
+
+                     <div class="skill-box">
+                        <span class="title">JavaScript</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per script">
+                                <span class="tooltip">90%</span>
+                            </span>
+                        </div>
+                     </div>
+
+                     <div class="skill-box">
+                        <span class="title">ReactJS</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per react">
+                                <span class="tooltip">50%</span>
+                            </span>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="tab " id="tab3">
+                <div class="slider">
+                    <div class="item">
+                        <h1>Project 1</h1>
+                        <img src="" alt="">
+                        <button class="btnDemo"><a href="#">Demo</a></button>
+                    </div>
+
+                    <div class="item">
+                        <h1>Project 2</h1>
+                        <img src="" alt="">
+                        <button class="btnDemo"><a href="#">Demo</a></button>
+                    </div>
+
+                    <div class="item">
+                        <h1>Project 3</h1>
+                        <img src="" alt="">
+                        <button class="btnDemo"><a href="#">Demo</a></button>
+                    </div>
+
+                    <div class="item">
+                        <h1>Project 4</h1>
+                        <img src="" alt="">
+                        <button class="btnDemo"><a href="#">Demo</a></button>
+                    </div>
+
+                    <button id="next"> ></button>
+                    <button id="prev"> <</button>
+                </div>
+            </div>
+
+            <div class="tab" id="tab4">
+                <div class="mean">
+                    <p>You only live once, but if you do it right, once is enough!</p>
+                    <ul>
+                        <li><i class="fa-solid fa-square-envelope"></i> :duykhang071120@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i> :0353616182</li>
+                        <li><i class="fa-brands fa-square-github"></i> :duykhang.github</li>
+                    </ul>
+                </div>
+                <div class=" contact">
+                    <form action="">
+                        <input type="text" placeholder="Your name">
+                        <input type="text" placeholder="Your email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Type your mesage here"></textarea>
+                        <button>Send</button>    
+                    </form>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <ul class="icon-list">
+                <li><i class="fa-brands fa-square-facebook"></i></li>
+                <li><i class="fa-brands fa-square-github"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-square-behance"></i></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
